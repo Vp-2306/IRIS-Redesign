@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRIS Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">IRIS</div>
+      <ul>
+        <li>Institute ▾</li>
+        <li>Academics ▾</li>
+        <li>Campus ▾</li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input type="text" placeholder="Search">
+      <div class="icons">
+        <span>🔔</span>
+        <span>⚙️</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <h1>Welcome back, Vashisth</h1>
+      <p>Here’s what’s happening with your academics today</p>
+    </section>
+
+    <section class="info-cards">
+      <div class="card blue">
+        <h3>Current Semester</h3>
+        <p>3rd</p>
+        <span>B.Tech. Computer Science</span>
+      </div>
+      <div class="card purple">
+        <h3>Major CGPA</h3>
+        <p>8.08 <span class="change">+0.12</span></p>
+        <span>out of 10</span>
+      </div>
+      <div class="card green">
+        <h3>Major Credit</h3>
+        <p>44</p>
+        <span>Credits completed</span>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <div class="attendance card-dark">
+        <h2>Attendance <span class="sub">3rd semester</span></h2>
+        <div class="subject-grid">
+          <div class="subject green">
+            <h4>Data Structures</h4>
+            <p>92% <span>42/46 classes</span></p>
+            <small>you have 10 leaves</small>
+          </div>
+          <div class="subject red">
+            <h4>Computer Networks</h4>
+            <p>68% <span>30/44 classes</span></p>
+            <small>attend 12 classes</small>
+          </div>
+          <div class="subject orange">
+            <h4>Operating Systems</h4>
+            <p>78% <span>33/42 classes</span></p>
+            <small>you have 2 leaves</small>
+          </div>
+          <div class="subject yellowgreen">
+            <h4>Database Management</h4>
+            <p>85% <span>34/40 classes</span></p>
+            <small>you have 5 leaves</small>
+          </div>
+          <div class="subject teal">
+            <h4>Linear Algebra</h4>
+            <p>95% <span>40/42 classes</span></p>
+            <small>you have 11 leaves</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule card-dark">
+        <h2>Today’s Schedule</h2>
+        <ul class="schedule-list">
+          <li><span>🕘</span> 09:00 – Data Structures</li>
+          <li><span>🕙</span> 10:00 – Computer Networks</li>
+          <li><span>☕</span> 11:00 – Break</li>
+          <li><span>🧪</span> 14:00 – DS Lab</li>
+        </ul>
+
+        <div class="weekly">
+          <h3>Weekly overview</h3>
+          <div class="week-grid">
+            <div>MON<br>DS<br>CN<br>BK<br>LAB</div>
+            <div>TUE<br>LA<br>DB<br>BK<br>OS</div>
+            <div>WED<br>CN<br>TC<br>BK<br>OS</div>
+            <div>THR<br>CN<br>TC<br>BK<br>LAB</div>
+            <div>FRI<br>LA<br>DB<br>BK<br>LAB</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-nav">
+      <button class="orange">Announcements</button>
+      <button class="teal">Assignments</button>
+      <button class="purple">Pay Fees</button>
+      <button class="yellow">Placement Details</button>
+      <button class="green">Grades</button>
+    </section>
+  </main>
+</body>
+</html>
