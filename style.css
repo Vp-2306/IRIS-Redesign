@@ -6,7 +6,7 @@
 }
 
 body {
-  background: radial-gradient(circle at top left, #0d1125, #07091a 60%);
+  background: radial-gradient(circle at top left, #0b0f1f, #07091a 70%);
   color: #fff;
   min-height: 100vh;
 }
@@ -16,10 +16,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #12172d, #0c1025);
+  background: rgba(18, 23, 45, 0.7);
+  backdrop-filter: blur(12px);
   padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 .logo {
@@ -27,6 +28,7 @@ body {
   font-size: 1.6rem;
   color: #b8bafc;
   letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(184,186,252,0.6);
 }
 
 .nav-left ul {
@@ -40,11 +42,12 @@ body {
   cursor: pointer;
   color: #ccc;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .nav-left li:hover {
   color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.6);
 }
 
 .nav-right {
@@ -54,22 +57,29 @@ body {
 }
 
 .nav-right input {
-  background: rgba(255,255,255,0.1);
-  border: none;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 20px;
   padding: 0.5rem 1rem;
   color: white;
   outline: none;
   transition: all 0.3s;
+  backdrop-filter: blur(8px);
 }
 
 .nav-right input:focus {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.3);
 }
 
 .icons span {
   margin-left: 0.8rem;
   cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+.icons span:hover {
+  color: #b8bafc;
+  transform: scale(1.1);
 }
 
 /* Dashboard */
@@ -83,11 +93,13 @@ body {
 .welcome h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 .welcome p {
   color: #9ba0b5;
   margin-top: 0.3rem;
+  opacity: 0.8;
 }
 
 /* Info cards */
@@ -101,15 +113,18 @@ body {
   flex: 1;
   min-width: 200px;
   padding: 1rem 1.5rem;
-  border-radius: 14px;
+  border-radius: 16px;
   color: white;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
-  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  transition: transform 0.25s, box-shadow 0.35s;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5), 0 0 12px rgba(255,255,255,0.1);
 }
 
 .card h3 {
@@ -129,13 +144,16 @@ body {
 
 /* Gradient cards */
 .blue {
-  background: linear-gradient(135deg, #344a80, #283561);
+  background: linear-gradient(135deg, rgba(52,74,200,0.4), rgba(40,53,150,0.2));
+  box-shadow: 0 0 15px rgba(81,120,255,0.4);
 }
 .purple {
-  background: linear-gradient(135deg, #7c4fad, #553b84);
+  background: linear-gradient(135deg, rgba(124,79,173,0.4), rgba(85,59,132,0.2));
+  box-shadow: 0 0 15px rgba(170,100,255,0.4);
 }
 .green {
-  background: linear-gradient(135deg, #3aa64a, #2e7b35);
+  background: linear-gradient(135deg, rgba(58,166,74,0.4), rgba(46,123,53,0.2));
+  box-shadow: 0 0 15px rgba(80,255,120,0.4);
 }
 
 /* Attendance & Schedule */
@@ -146,17 +164,20 @@ body {
 }
 
 .card-dark {
-  background: linear-gradient(145deg, #14172e, #0f1226);
-  border-radius: 16px;
+  background: rgba(20,23,46,0.5);
+  border-radius: 18px;
   flex: 1;
   padding: 1.5rem;
   min-width: 300px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .card-dark h2 {
   margin-bottom: 1rem;
   font-family: 'Poppins';
+  text-shadow: 0 0 6px rgba(255,255,255,0.2);
 }
 
 .sub {
@@ -173,15 +194,17 @@ body {
 
 .subject {
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
   color: white;
-  background: linear-gradient(135deg, #222, #333);
-  transition: transform 0.2s, box-shadow 0.3s;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.25s, box-shadow 0.35s;
 }
 
 .subject:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5), 0 0 8px rgba(255,255,255,0.1);
 }
 
 .subject h4 {
@@ -199,22 +222,11 @@ body {
 }
 
 /* Colored gradients for each subject */
-.green {
-  background: linear-gradient(135deg, #1ea34a, #148c3c);
-}
-.red {
-  background: linear-gradient(135deg, #c5493d, #9d332c);
-}
-.orange {
-  background: linear-gradient(135deg, #f2953a, #d9793c);
-}
-.yellowgreen {
-  background: linear-gradient(135deg, #c5e14b, #8fbf26);
-  color: #000;
-}
-.teal {
-  background: linear-gradient(135deg, #1fc3af, #148a7f);
-}
+.green { background: linear-gradient(135deg, #2ecc71cc, #27ae60b3); }
+.red { background: linear-gradient(135deg, #e74c3ccc, #c0392bb3); }
+.orange { background: linear-gradient(135deg, #f39c12cc, #d35400b3); }
+.yellowgreen { background: linear-gradient(135deg, #d4fc79cc, #96e6a1b3); color: #000; }
+.teal { background: linear-gradient(135deg, #1abc9ccc, #16a085b3); }
 
 /* Schedule */
 .schedule-list {
@@ -223,10 +235,11 @@ body {
 }
 
 .schedule-list li {
-  background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  background: rgba(255,255,255,0.07);
   margin-bottom: 0.5rem;
   padding: 0.7rem 1rem;
   border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
 .weekly {
@@ -241,11 +254,12 @@ body {
 }
 
 .week-grid div {
-  background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  background: rgba(255,255,255,0.08);
   text-align: center;
   border-radius: 8px;
   padding: 0.5rem;
   font-size: 0.8rem;
+  backdrop-filter: blur(10px);
 }
 
 /* Bottom nav */
@@ -263,17 +277,20 @@ body {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.3s;
+  transition: transform 0.25s, box-shadow 0.35s;
+  backdrop-filter: blur(8px);
 }
 
 .bottom-nav button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(255,255,255,0.25);
 }
 
-/* Gradient buttons */
-.bottom-nav .orange { background: linear-gradient(135deg, #f2953a, #d9793c); }
-.bottom-nav .teal { background: linear-gradient(135deg, #1fc3af, #148a7f); }
-.bottom-nav .purple { background: linear-gradient(135deg, #7c4fad, #553b84); }
-.bottom-nav .yellow { background: linear-gradient(135deg, #e9d46a, #e0c14b); color: #000; }
-.bottom-nav .green { background: linear-gradient(135deg, #3aa64a, #2e7b35); }
+/* Gradient buttons - vibrant glowing */
+.bottom-nav .orange { background: linear-gradient(135deg, #ffb75e, #ed8f03); box-shadow: 0 0 10px rgba(255,183,94,0.6); }
+.bottom-nav .teal { background: linear-gradient(135deg, #43cea2, #185a9d); box-shadow: 0 0 10px rgba(67,206,162,0.6); }
+.bottom-nav .purple { background: linear-gradient(135deg, #9f5afd, #6f32d0); box-shadow: 0 0 10px rgba(159,90,253,0.6); }
+.bottom-nav .yellow { background: linear-gradient(135deg, #fceabb, #f8b500); color: #000; box-shadow: 0 0 10px rgba(252,234,187,0.6); }
+.bottom-nav .green { background: linear-gradient(135deg, #56ab2f, #a8e063); box-shadow: 0 0 10px rgba(168,224,99,0.6); }
+
+
