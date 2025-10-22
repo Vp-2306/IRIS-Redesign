@@ -292,5 +292,43 @@ body {
 .bottom-nav .purple { background: linear-gradient(135deg, #9f5afd, #6f32d0); box-shadow: 0 0 10px rgba(159,90,253,0.6); }
 .bottom-nav .yellow { background: linear-gradient(135deg, #fceabb, #f8b500); color: #000; box-shadow: 0 0 10px rgba(252,234,187,0.6); }
 .bottom-nav .green { background: linear-gradient(135deg, #56ab2f, #a8e063); box-shadow: 0 0 10px rgba(168,224,99,0.6); }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar .icon {
+  width: 24px;
+  height: 24px;
+  color: #bfc3d6;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.sidebar .icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+body {
+  padding-left: 70px; /* prevent overlap with sidebar */
+}
 
 
