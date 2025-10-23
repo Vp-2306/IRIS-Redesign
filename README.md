@@ -36,7 +36,7 @@ The goal of this design is to reimagine the IRIS student dashboard into a **mode
 |-------------------|----------|
 | **HTML5** | Structure and semantic layout |
 | **CSS3 (Flexbox + Grid)** | Styling, layout, and responsiveness |
-| **JavaScript (Vanilla)** | For dynamic data and interactivity (to be added) |
+| **JavaScript (Vanilla)** | For dynamic data and interactivity |
 | **Google Fonts (Inter + Poppins)** | Typography and modern design |
 | **GitHub Pages** | For project deployment |
 | **ChatGPT (AI Assistant)** | Helped with code generation, layout planning, and design fine-tuning |
@@ -54,8 +54,8 @@ The goal of this design is to reimagine the IRIS student dashboard into a **mode
 
 ## 🚀 Live Demo
 
-🔗 **Live Site:** [View Deployment Here](#)  
-*(The link will be added once deployed via GitHub Pages)*  
+🔗 **Live Site:** [[View Deployment Here](https://irisredesignbyvp.netlify.app/)](#)  
+
 
 ---
 
