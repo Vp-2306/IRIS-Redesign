@@ -381,5 +381,54 @@ body {
 .break {
   color: #ffd700;
 }
+/* 🔹 NEW CODE START: Card icon styling */
+
+.card {
+  position: relative; /* allows image to be positioned inside */
+}
+
+.card-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 40px;       /* adjust image size */
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.card:hover .card-icon {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* 🔹 NEW CODE END */
+/* 🔹 NEW CODE START: Style for card icons */
+.card-icon {
+  position: absolute;           /* So we can place it neatly inside the card */
+  right: 15px;                  /* Slight spacing from the right border */
+  top: 50%;                     /* Vertically center the image */
+  transform: translateY(-50%);  /* Adjust for perfect centering */
+  width: 40px;                  /* Adjust icon size as needed */
+  height: 40px;
+  border-radius: 50%;           /* Makes the image round */
+  object-fit: cover;            /* Ensures proper scaling */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Soft glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional hover effect for a smooth modern glow */
+.card-icon:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Ensure cards use relative positioning to contain the icons */
+.card {
+  position: relative; /* 🔹 Needed so .card-icon aligns properly inside */
+}
+/* 🔹 NEW CODE END */
+
 
 
