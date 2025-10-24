@@ -14,6 +14,7 @@ The goal of this design is to reimagine the IRIS student dashboard into a **mode
 - **Visual Hierarchy:** Important sections like CGPA, Semester Info, and Attendance stand out through gradient cards and font emphasis.
 - **User Comfort:** A dark theme with soft gradients minimizes eye strain and enhances contrast.
 - **Responsiveness:** The entire layout adapts to different screen sizes using Flexbox and Grid, ensuring usability across desktops and tablets.
+- **Easy Accessibility:** Shortcuts like pay fees, Assignments, announcements etc added for easy and fast accessibility the side nav bar also has many options.
 
 ---
 
@@ -38,7 +39,7 @@ The goal of this design is to reimagine the IRIS student dashboard into a **mode
 | **CSS3 (Flexbox + Grid)** | Styling, layout, and responsiveness |
 | **JavaScript (Vanilla)** | For dynamic data and interactivity |
 | **Google Fonts (Inter + Poppins)** | Typography and modern design |
-| **GitHub Pages** | For project deployment |
+| **Netlify** | For project deployment |
 | **ChatGPT (AI Assistant)** | Helped with code generation, layout planning, and design fine-tuning |
 
 ---
